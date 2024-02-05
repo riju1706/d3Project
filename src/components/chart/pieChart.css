@@ -1,0 +1,15 @@
+.pieChartContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pieChart {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .pieChartContainer {
+    flex-direction: column;
+    gap: 8rem;
+  }
+}

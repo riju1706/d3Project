@@ -1,0 +1,42 @@
+/* Styles for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the toggle button */
+.toggle-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the arrow */
+.arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate the arrow when the dropdown is open */
+.show .arrow {
+  transform: rotate(180deg);
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown content when the toggle button is clicked */
+.show .dropdown-content {
+  display: block;
+}

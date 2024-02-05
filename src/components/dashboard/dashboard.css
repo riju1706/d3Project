@@ -1,0 +1,51 @@
+.dashboardContainer {
+  padding: 1rem 4rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.tableRow {
+  display: flex;
+  text-align: center;
+}
+.colId {
+  width: 2rem;
+  text-align: center;
+}
+.colName {
+  width: 12rem;
+  text-align: center;
+}
+.colSalary {
+  width: 5rem;
+  text-align: center;
+}
+.colAge {
+  width: 2rem;
+  text-align: center;
+}
+.dashboardFromSvg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media (max-width: 992px) {
+  .dashboardContainer {
+    flex-direction: column;
+  }
+  .dashboardFromSvg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
